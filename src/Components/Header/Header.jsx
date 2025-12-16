@@ -10,7 +10,7 @@ import {DataContext} from "../DataProvider/DataProvider"
 function Header() {
   const [{basket}, dispatch] = useContext(DataContext)
   return (
-    <>
+    <section className={classes.fixed}>
       <section>
         <div className={classes.header__container}>
           {/* logo section */}
@@ -72,7 +72,7 @@ function Header() {
         </div>
         <LowerHeader />
       </section>
-    </>
+    </section>
   );
 }
 
