@@ -2,26 +2,23 @@ export const categoryInfos = [
   {
     title: "Electronics",
     name: "electronics",
-    imgLink:
-      "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_TV_2X._SY304_CB432517900_.jpg",
+    imgLink: "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_t.png",
   },
 
   {
     title: "Discover Fashion trends",
     name: "women's clothing",
-    imgLink:
-      "https://images.unsplash.com/photo-1521334884684-d80222895322?auto=format&fit=crop&w=800&q=80",
+    imgLink: "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_t.png",
   },
   {
     title: "Men's Clothing",
     name: "men's clothing",
-    imgLink:
-      "https://images.unsplash.com/photo-1520975916090-3105956dac38?auto=format&fit=crop&w=800&q=80",
+    imgLink: "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png",
   },
   {
     title: "Jewelery",
     name: "jewelery",
     imgLink:
-      "https://images.unsplash.com/photo-1512163143273-bde0e3cc7407?auto=format&fit=crop&w=800&q=80",
+      "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_t.png",
   },
 ];

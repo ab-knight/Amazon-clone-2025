@@ -7,8 +7,8 @@ import { useContext } from "react";
 import { DataContext } from "../DataProvider/DataProvider";
 import {Type} from "../../Utility/action.type"
 
-function ProductCard({ product, flex, renderDesc }) {
-  const { image, title, id, rating, price, description } = product;
+function ProductCard({ product, flex, renderDesc, renderAdd }) {
+  const { image, title, id, rating, price, description, } = product;
 
   const [state, dispatch]= useContext(DataContext)
 
@@ -37,7 +37,7 @@ function ProductCard({ product, flex, renderDesc }) {
       </Link>
       <div>
         <h3>{title}</h3>
-        {renderDesc && <div style={{maxWidth:"750px"}}>{description}</div>}
+        {renderDesc && <div style={{ maxWidth: "750px" }}>{description}</div>}
         <div className={classes.rating}>
           {/* rating */}
           <Rating value={Number(rating?.rate) || 0} precision={0.1} readOnly />
@@ -50,7 +50,11 @@ function ProductCard({ product, flex, renderDesc }) {
           <CurrencyFormat amount={price} />
         </div>
       </div>
-      <button className={classes.button} onClick={addToCart}>add to card</button>
+      {renderAdd && (
+        <button className={classes.button} onClick={addToCart}>
+          add to card
+        </button>
+      )}
     </div>
   );
 }
